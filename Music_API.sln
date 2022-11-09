@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Music_API", "Music_API\Music_API.csproj", "{527CB56D-3AF7-4339-94CA-BA230249B5A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Music_API", "Music_API\Music_API.csproj", "{527CB56D-3AF7-4339-94CA-BA230249B5A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicDataAccess", "MusicDataAccess\MusicDataAccess.csproj", "{A3CA60A0-B6B5-49EB-A93B-E2BB27B7A220}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{527CB56D-3AF7-4339-94CA-BA230249B5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{527CB56D-3AF7-4339-94CA-BA230249B5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{527CB56D-3AF7-4339-94CA-BA230249B5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3CA60A0-B6B5-49EB-A93B-E2BB27B7A220}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3CA60A0-B6B5-49EB-A93B-E2BB27B7A220}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3CA60A0-B6B5-49EB-A93B-E2BB27B7A220}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3CA60A0-B6B5-49EB-A93B-E2BB27B7A220}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

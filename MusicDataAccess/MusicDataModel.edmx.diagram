@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c2bb3dfbd51641319f28a7a83ead7b86" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="MusicDataModel.Album" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.Genre" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.Musician" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.Playlist" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.PlaylistSong" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.Provider" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.ProviderSong" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.Song" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.UserRating" Width="1.5" PointX="7.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="MusicDataModel.User" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <AssociationConnector Association="MusicDataModel.FK__Albums__GenreID__31B762FC" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__Albums__Musician__30C33EC3" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__Songs__AlbumID__3587F3E0" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__PlaylistS__Playl__4E53A1AA" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__Playlists__UserI__4A8310C6" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__PlaylistS__SongI__4F47C5E3" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__ProviderS__Provi__3D2915A8" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__ProviderS__SongI__3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__UserRatin__SongI__45BE5BA9" ManuallyRouted="false" />
+        <AssociationConnector Association="MusicDataModel.FK__UserRatin__UserI__44CA3770" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
