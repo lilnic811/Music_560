@@ -8,62 +8,43 @@ using System.Data.Entity.Migrations;
 
 namespace Music_API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Music")]
     [ApiController]
     public class MusicController : ControllerBase
     {
-        // GET: api/<MusicController>
+        // GET: api/Music
         [HttpGet]
-        public List<Song> Get()
+        public List<object> Get()
         {
-            using ( MusicDataEntities entities = new MusicDataEntities() )
-            {
-                return entities.Songs.ToList();
-            }
+            return new List<object>() { new object() };
         }
 
-        // GET api/<MusicController>/5
-        [HttpGet("{SongID}")]
-        public Song Get(int SongID)
+        // GET api/Music/5
+        [HttpGet("{ID}")]
+        public object Get(int ID)
         {
-            using (MusicDataEntities entities = new MusicDataEntities())
-            {
-                return entities.Songs.Find(SongID);
-            }
+            return new object();
         }
 
-        // POST api/<MusicController>
+        // POST api/Music
         [HttpPost]
-        public void Post([FromBody] Song song)
+        public void Post([FromBody] object Somthing)
         {
-            using (MusicDataEntities entities = new MusicDataEntities())
-            {
-                entities.Songs.Add(song);
-                entities.SaveChanges();
-            }
+
         }
 
-        // PUT api/<MusicController>/5
-        [HttpPut("{SongID}")]
-        public void Put(int SongID, [FromBody] Song song)
+        // PUT api/Music/5
+        [HttpPut("{ID}")]
+        public void Put(int ID, [FromBody] object Somthing)
         {
-            using (MusicDataEntities entities = new MusicDataEntities())
-            {
-                song.SongID = SongID;
-                entities.Songs.AddOrUpdate(song);
-                entities.SaveChanges();
-            }
+            
         }
 
-        // DELETE api/<MusicController>/5
-        [HttpDelete("{SongID}")]
-        public void Delete(int SongID)
+        // DELETE api/Music/5
+        [HttpDelete("{ID}")]
+        public void Delete(int ID)
         {
-            using (MusicDataEntities entities = new MusicDataEntities())
-            {
-                entities.Songs.Remove(entities.Songs.Find(SongID));
-                entities.SaveChanges();
-            }
+
         }
     }
 }
